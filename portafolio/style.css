@@ -1,0 +1,215 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background-attachment: fixed;
+        }
+
+        nav {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 3rem 1rem;
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid #2ecc71;
+            padding-bottom: 0.5rem;
+            color: #1e3c72;
+        }
+
+        #inicio {
+            text-align: center;
+            padding: 5rem 1rem;
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+        }
+
+        #inicio h1 {
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .proyecto {
+            background: white;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .proyecto h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        .habilidades-lista {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+
+        .habilidad {
+            background: #f4f4f4;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
+        .demo-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .demo-box {
+            background: #f9f9f9;
+            padding: 1.5rem;
+            border-radius: 5px;
+            border: 2px solid #ddd;
+        }
+
+        .demo-box h4 {
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .demo-area {
+            background: white;
+            min-height: 100px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .demo-box button {
+            margin-right: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .demo-box input {
+            width: 100%;
+            margin-bottom: 0.5rem;
+        }
+
+        #caja-color {
+            background: #3498db;
+            transition: background 0.3s;
+        }
+
+        #caja-animada {
+            width: 50px;
+            height: 50px;
+            background: #e74c3c;
+            border-radius: 5px;
+        }
+
+        @keyframes girar {
+            0% { transform: rotate(0deg) scale(1); }
+            50% { transform: rotate(180deg) scale(1.5); }
+            100% { transform: rotate(360deg) scale(1); }
+        }
+
+        .animando {
+            animation: girar 1s ease-in-out;
+        }
+
+        #lista-items {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        #lista-items li {
+            background: #ecf0f1;
+            padding: 0.5rem;
+            margin-bottom: 0.5rem;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        #lista-items li:hover {
+            background: #e74c3c;
+            color: white;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        input, textarea {
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+        }
+
+        button {
+            padding: 1rem;
+            background: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        button:hover {
+            background: #555;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        @media (max-width: 600px) {
+            .habilidades-lista {
+                grid-template-columns: 1fr;
+            }
+        }
+ 
